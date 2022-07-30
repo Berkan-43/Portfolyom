@@ -1,0 +1,165 @@
+/* Resetleme */
+* {
+    box-sizing: border-box;
+}
+body,
+h1,
+p {
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+}
+div {
+    overflow: auto;
+}
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Main-div style işlemleri */
+.main-div {
+    margin: 50px 0;
+    text-align: center;
+    line-height: 4;
+    color: white;
+}
+.main-div .fa-brands {
+    margin-inline: 20px;
+    cursor: pointer;
+    font-size: 35px;
+}
+.fa-brands:hover {
+    color: rgb(64, 139, 224);
+    transition: 0.5s;
+}
+.animate {
+    animation: fade 2s infinite;
+}
+@keyframes fade {
+    0% {
+        color: wheat;
+    }
+    50% {
+        color: blueviolet;
+    }
+    100% {
+        color: wheat;
+    }
+}
+
+/* Mycontainer Style işlemleri */
+.mycontainer {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    padding: 0 80px;
+    padding-bottom: 100px;
+}
+.content {
+    width: 100%;
+    margin-top: 60px;
+}
+.content h2 {
+    margin-left: 20px;
+}
+h2 {
+    margin-bottom: 20px;
+}
+.column-25, .column-50, .column-75 {
+    float: left;
+    padding: 20px;
+}
+.column-25 {
+    width: 25%;
+}
+.column-50 {
+    width: 50%;
+}
+.column-75 {
+    width: 75%;
+}
+.column-100 {
+    width: 100%;
+}
+
+.column-25:hover {
+    cursor: pointer;
+}
+.column-25 img {
+    transition: transform 0.5s;
+}
+
+/* Hesapla ve İletişim */
+input, textarea, select {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+button {
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.column-25 button {
+    margin-top: 23px;
+}
+button:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+input[type=submit] {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: blueviolet;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: cornflowerblue;
+}
+
+/* Responsive */
+@media screen and (max-width: 1100px) {
+    .mycontainer {
+        width: 90%;
+    }
+    .column-25, .column-75 {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .mycontainer {
+        width: 100%;
+        text-align: center;
+    }
+    .column-25, .column-50, .column-75, .column-100 {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .mycontainer {
+        padding: 0 10px;
+    }
+}
